@@ -1,0 +1,542 @@
+/* ----------------------------------------
+Base Styles
+------------------------------------------- */
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 15px;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+	padding: 0;
+	letter-spacing: .02em;
+	text-align: center;
+	height: 100vh;
+	min-width:900px;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/* Responsive images */
+img {
+	max-width: 200%;
+}
+
+img {
+	/* margin-left: 280px; */
+	/* float: left;
+  margin: 0 100%;
+  width: 70%; */
+}
+
+/* ----------------------------------------
+Typography
+------------------------------------------- */
+p {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: none;
+	line-height: 1.4;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 37.5px;
+	font-size: 2.5rem;
+	letter-spacing: 12px;
+	letter-spacing: .8rem;
+}
+
+.vertical-center h1 {
+	margin: -8em 0 0 20em;
+}
+
+.vertical-center h2 {
+	margin: 1em 0 0 25em;
+}
+
+h3.tagline {
+	margin-bottom: 2em;
+	margin-left: 6em;
+	color: white;
+	letter-spacing: 1px;
+}
+
+h3.about_title {
+	color: black;
+	margin-bottom: 2em;
+}
+
+/* a {
+text-decoration: none;
+color: #7B98AA;
+font-weight: 600;
+transition: all .3s ease-in-out;
+} */
+
+/* a:hover {
+color: #44545E;
+} */
+
+
+
+/* ----------------------------------------
+Lists
+------------------------------------------- */
+ul a {
+	text-transform: none;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+li {
+	display: block;
+	text-align: left;
+}
+
+
+
+/* ----------------------------------------
+Layout
+------------------------------------------- */
+section {
+	padding: 105px 30px;
+	padding: 7rem 2rem;
+}
+
+.wrap {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.grid-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.col-third {
+	width: 32%;
+}
+
+.col-half {
+	width: 49.2%;
+}
+
+.vertical-center {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-wrap:  wrap;
+	flex-wrap:  wrap;
+}
+
+/*.callout #testimonials {
+background-color: rgba(0, 120, 137, 0.5);
+}*/
+
+/* ----------------------------------------
+Header
+------------------------------------------- */
+header {
+	padding-top: 30px;
+	height: 100vh;
+	/* min-width:900px; */
+}
+
+
+.navbar
+{
+	font-family: 'Montserrat', sans-serif;
+	/* height: 115px; */
+	/* width: 130%; */
+	margin-left: -11em;
+	margin-right: -11.5em;
+	/* margin-bottom: -10em; */
+	background-image: url('../images/navbar_1445x112.jpg');
+	background-repeat: no-repeat;
+}
+
+.navbar-brand {
+	margin-top:-2em;
+}
+
+.navbar-nav {
+	margin-top:1.5em;
+	margin-left: 60em;
+}
+
+.phone {
+	margin-left: 2em;
+	margin-right: 1em;
+}
+
+.hamburger {
+	display: none;
+}
+
+/* ----------------------------------------
+Buttons
+------------------------------------------- */
+.button {
+	color: white;
+	background-color: #ff5040;
+	border-color: red;
+	padding: 13px 40px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bolder;
+	text-transform: uppercase;
+	margin-left: 47.5em;
+	margin-top: -10em;
+	margin-bottom: 20em;
+}
+
+/* ----------------------------------------
+Banner
+------------------------------------------- */
+
+#banner_title {
+	background-image: url('../images/sunset_cut_1445x682.jpg');
+	margin-bottom: 46em;
+	margin-left: 2.7em;
+	background-repeat: no-repeat;
+}
+
+
+
+.DL_Lawfirm {
+	margin-top: -8em;
+	margin-left: 15em;
+	margin-bottom: -13em;
+}
+
+/* .tinted-image {
+background:
+linear-gradient{
+rgba(101, 113, 120, 1)
+rgba(101, 113, 120, 1)
+}
+url(images/D&L_logo_horizontal_white.png);
+} */
+
+
+li {
+	margin-bottom: 5em;
+}
+
+h3, p {
+	text-align: center;
+	font-weight: 600;
+}
+
+
+/* ----------------------------------------
+About
+------------------------------------------- */
+#about {
+	margin-top: -50em;
+}
+
+.w3-red {
+	background-color: #ff5040;
+	color: #fff;
+}
+
+.w3-padding-64 {
+	padding: 90px;
+	padding-bottom: 55px;
+	padding-left: 110px;
+}
+
+.w3-center p {
+	border: 1px solid white;
+	margin-left: -30px;
+	margin-top: 0px;
+}
+
+/* Float four columns side by side */
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.MultiCarousel {
+	margin-left: 50px;
+	margin-right: 50px;
+	overflow: hidden;
+	padding: 15px;
+	width: 100%;
+	position:relative;
+}
+
+.MultiCarousel .MultiCarousel-inner {
+	transition: 1s ease all;
+	float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item {
+	float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item > div {
+	margin-left: 50px;
+	text-align: center;
+	/* margin-right: 50px; */
+	/* padding-right: 50px; */
+
+	float: left;
+  margin: 0 50%;
+  width: 45%;
+
+}
+
+.lawyer1 {
+	/* padding-right: 60px; */
+	width: 70%;
+}
+
+.lawyer2 {
+	/* padding-right: 60px; */
+	width: 70%;
+}
+
+.lawyer3 {
+	/* padding-right: 60px; */
+	width: 70%;
+}
+
+.lawyer4 {
+	/* padding-right: 60px; */
+	width: 70%;
+}
+
+
+.MultiCarousel .leftLst, .MultiCarousel .rightLst {
+	position:absolute;
+	top:calc(50% - 20px);
+}
+
+.MultiCarousel .leftLst {
+	left:0;
+}
+
+.MultiCarousel .rightLst {
+	/* right:0; */
+	margin-right: 25em;
+	color: black;
+	background: none;
+	border: none;
+}
+
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over {
+	pointer-events: none;
+	color: black;
+	background: none;
+	border: none;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 -20px 0 -20px;
+	margin-left: 80px;
+	margin-right: -100px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ----------------------------------------
+Footer
+------------------------------------------- */
+footer {
+	background-color: #000;
+	overflow: auto;
+}
+
+.copyright {
+	border-top: 2px solid #44545E;
+	padding: 15px 0 3px;
+	padding: 1rem 0 .2rem;
+	color: #fff;
+	text-align: center;
+}
+/*
+#siteseal {
+margin: 0 auto;
+width: 100px;
+} */
+
+/* ----------------------------------------
+
+Error Styles
+------------------------------------------- */
+.form-group input,
+.form-group:last-of-type {
+	width: 100%;
+
+}
+
+.error-message {
+	margin: 8px 0 12px;
+	text-align: left;
+	font-size: .9rem;
+	color: #ED5254;
+	display: none;
+}
+
+.error {
+	border: 2px solid #ED5254;
+}
+
+/* ----------------------------------------
+Media Queries
+------------------------------------------- */
+
+@media only screen and (max-width: 790px) {
+
+	/* p {
+	font-family: 'Lato', sans-serif;
+	text-transform: none;
+	line-height: 1.4;
+	} */
+
+	body h1 {
+		font-size: 20.5px;
+		/* font-size: 2.5rem; */
+		letter-spacing: 1px;
+		letter-spacing: .2rem;
+	}
+
+	/* .vertical-center h1 {
+	margin: -8em 0 0 20em;
+}
+
+.vertical-center h2 {
+margin: 1em 0 0 25em;
+} */
+
+a {
+	text-decoration: none;
+	color: #7B98AA;
+	font-weight: 600;
+	transition: all .3s ease-in-out;
+}
+
+a:hover {
+	color: #44545E;
+}
+
+
+header {
+	padding-top: 30px;
+	height: 100vh;
+	min-width:900px;
+}
+
+#welcome {
+	margin: 0 40em 0 2em;
+}
+
+h1 a:hover {
+	color: #EA7200;
+}
+
+.hamburger {
+	display: none;
+}
+
+h1 a,
+h1,
+header h2 {
+	color: #fff;
+}
+
+.col-third {
+	width: 100%;
+}
+
+.col-third img {
+	display: block;
+	margin: 3rem auto 1rem;
+}
+
+.col-third h3 {
+	margin-bottom: .5rem;
+}
+
+.col-third:first-of-type img {
+	margin-top: 0;
+}
+
+
+
+
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+	html {
+		font-size: 100px;
+	}
+
+	.hamburger {
+		display: block;
+		color: #fff;
+		font-size: 1.7rem;
+		position: absolute;
+		top: 10px;
+		left: 2px;
+	}
+
+}

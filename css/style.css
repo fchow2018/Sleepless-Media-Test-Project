@@ -1,0 +1,655 @@
+/* ----------------------------------------
+Base Styles
+------------------------------------------- */
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 15px;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+	padding: 0;
+	letter-spacing: .02em;
+	text-align: center;
+	height: 100vh;
+	min-width:900px;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 auto;
+}
+
+/* Responsive images */
+img {
+	max-width: 200%;
+}
+
+/* ----------------------------------------
+Typography
+------------------------------------------- */
+p {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: none;
+	line-height: 1.4;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 37.5px;
+	font-size: 2.5rem;
+	letter-spacing: 12px;
+	letter-spacing: .8rem;
+}
+
+.vertical-center h1 {
+	margin: -8em 0 0 20em;
+}
+
+.vertical-center h2 {
+	margin: 1em 0 0 25em;
+}
+
+h3.tagline {
+	margin-bottom: 2em;
+	margin-left: 6em;
+	color: white;
+	letter-spacing: 1px;
+}
+
+h3.contact-title {
+	font-family: 'Montserrat', sans-serif;
+	text-align: left;
+	margin-left: 110px;
+	margin-top: -2em;
+}
+
+h3 {
+	color: black;
+	margin-bottom: 10em;
+}
+
+/* ----------------------------------------
+Lists
+------------------------------------------- */
+ul a {
+	text-transform: none;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+li {
+	display: block;
+	text-align: left;
+}
+
+
+
+/* ----------------------------------------
+Layout
+------------------------------------------- */
+section {
+	padding: 105px 30px;
+	padding: 7rem 2rem;
+}
+
+.wrap {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.grid-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.col-third {
+	width: 32%;
+}
+
+.col-half {
+	width: 49.2%;
+}
+
+.vertical-center {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-wrap:  wrap;
+	flex-wrap:  wrap;
+}
+
+/* ----------------------------------------
+Header
+------------------------------------------- */
+header {
+	padding-top: 30px;
+	height: 100vh;
+}
+
+
+.navbar
+{
+	font-family: 'Montserrat', sans-serif;
+	margin-left: -11em;
+	margin-right: -11.5em;
+	background-image: url('../images/navbar_1445x112.jpg');
+	background-repeat: no-repeat;
+	box-shadow: 0 1000px rgba(0, 0, 0, 0.5) inset; /* Black */
+	display: inline-block;
+	position: relative;
+}
+
+.navbar-brand {
+	margin-top:-2em;
+}
+
+.navbar-nav {
+	margin-top:1.5em;
+	margin-left: 50em;
+}
+
+.phone {
+	margin-left: 5em;
+	margin-right: 1em;
+}
+
+.hamburger {
+	display: none;
+}
+
+/* ----------------------------------------
+Buttons
+------------------------------------------- */
+.banner-button {
+	color: white;
+	background-color: #ff5040;
+	border-color: red;
+	padding: 13px 40px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bolder;
+	text-transform: uppercase;
+	margin: -10em 0 20em 46.7em;
+}
+
+.help-button {
+	color: white;
+	background-color: #ff5040;
+	border-color: red;
+	padding: 13px 40px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bolder;
+	text-transform: uppercase;
+	margin-left: 50em;
+}
+
+/* ----------------------------------------
+Banner
+------------------------------------------- */
+
+#banner-title {
+	background-image: url('../images/sunset_cut_1445x682.jpg');
+	margin-top: -2.6em;
+	margin-bottom: 50em;
+	margin-left: 2.7em;
+	background-repeat: no-repeat;
+	box-shadow: 0 1000px rgba(0, 0, 0, 0.5) inset; /* Black */
+	position: relative;
+	display: inline-block;
+}
+
+
+
+.DL-Lawfirm {
+	margin-top: -8em;
+	margin-left: 15em;
+	margin-bottom: -13em;
+}
+
+li {
+	margin-bottom: 5em;
+}
+
+h3, p {
+	text-align: center;
+	font-weight: 600;
+}
+
+
+/* ----------------------------------------
+About
+------------------------------------------- */
+#about {
+	background-image: url('../images/White&Background_2000x290.jpg');
+	background-repeat: no-repeat;
+	margin-top: -50em;
+}
+
+/* Carousel */
+
+.MultiCarousel {
+	float: left;
+	overflow: hidden;
+	padding: 0px;
+	width: 100%;
+	position:relative;
+}
+
+.MultiCarousel .MultiCarousel-inner {
+	transition: 1s ease all;
+	float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item {
+	float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item > div {
+	text-align: center;
+	padding:10px;
+	margin:10px;
+}
+
+.MultiCarousel .leftLst, .MultiCarousel .rightLst {
+	position:absolute;
+	border-radius:50%;
+	top:calc(50% - 20px);
+}
+
+.MultiCarousel .leftLst {
+	left:0;
+}
+
+.MultiCarousel .rightLst {
+	right:0;
+}
+
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over {
+	pointer-events: none;
+	background:#ccc;
+}
+
+/* Float four columns side by side */
+.column {
+	float: left;
+	width: 55%;
+	margin-right: -100px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Practice Areas */
+#practice-areas {
+	background-color: #e8e3dd;
+	width: 1440px;
+	margin: 0 0 -8em 3em;
+}
+
+.practice-areas-title {
+	margin-top: -1.5em;
+	margin-bottom: 2em;
+}
+
+#practice-areas img {
+	margin-left: 2.7em;
+}
+
+img.real-estate {
+	margin-left: 3em!important;
+}
+
+img.construction{
+	margin-left: 3em!important;
+}
+
+img.pro {
+	margin-left: 2.3em!important;
+}
+
+.biz-title, .real-estate-title, .construction-title, .professional-title,
+.biz-description, .real-estate-description, .construction-description, .professional-title
+, .professional-description {
+	margin-left: 3em;
+	font-family: 'Montserrat', sans-serif, 'Light';
+	text-align: left;
+}
+
+.biz-description, .real-estate-description, .construction-description, .professional-title
+, .professional-description {
+	width: 80%;
+}
+
+hr {
+	margin-left: 3em;
+	width: 78%;
+	height: 1px !important;
+}
+
+hr.pro {
+	margin-bottom: 18px;
+}
+
+/* Help */
+#help {
+	background-color: #414546;
+	width: 1440px;
+	height: 0px;
+	position: absolute;
+	margin: 5em 0 -20em 3em;
+}
+
+.help-title {
+	color: white;
+	margin: -1em -35em 0 10em;
+}
+
+/* Contact */
+
+#contact {
+	background-image: url("../images/map_cropped_withp&_1050x574.png");
+	background-repeat: no-repeat;
+	margin: 19em 3em;
+}
+
+.phone-contact {
+	margin-left: 2em;
+	margin-right: 1em;
+}
+
+.email-contact {
+	margin-left: 2em;
+	margin-right: 1em;
+}
+
+.location-contact {
+	margin-left: 2em;
+	margin-right: 1em;
+}
+/* Float four columns side by side */
+.contact-column {
+	float: left;
+	width: 55%;
+	margin-right: -100px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.contact-row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.contact-row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+aside {
+	width: 30%;
+	float: right;
+	font-style: italic;
+	color: #29627e;
+}
+
+ul.contact-list {
+	margin-top: 70px;
+	margin-left: 80px;
+}
+
+li {
+	margin-top: -60px;
+}
+
+.parking {
+	background-color: #666769;
+	margin: 10em 15em;
+	font-size: 12px;
+}
+
+p.parking {
+	font-weight: lighter;
+	text-align: left;
+	color: white;
+	width: 34%;
+	padding: 44px;
+}
+
+/* D&L Statement */
+
+#DL-statement {
+	background-image: url("../images/beach-california-clear-sky-707712_with&_1400x934.jpg");
+	background-repeat: no-repeat;
+	box-shadow: 0 950px rgba(0, 0, 0, 0.3) inset;
+	position: relative;
+	display: inline-block;
+	margin: -22.5em 3em;
+	height: 900px;
+}
+
+p.statement {
+	font-size: 20px;
+	line-height: 40px;
+	text-align: left;
+	margin-top: 11em;
+	margin-left: 5em;
+	color: white;
+	width: 40%;
+}
+
+/* ----------------------------------------
+Footer
+------------------------------------------- */
+footer {
+	position:relative;
+	text-align:center;
+	padding:20px 0px 0px 0px;
+	margin-top: 18em;
+	margin-left: 2.5em;
+	height:80px;
+	width: 1438px;
+	font-size: 16px;
+	background-color: #F2EFEA;
+	clear:both
+}
+
+ul li{
+	/* float:left; */
+	padding:11px 2px;
+	margin:10px 7px;
+	}
+
+li{display:inline;}
+
+A:link {
+	color:#000;
+	text-decoration:none;
+
+	}
+A:visited {text-decoration:none;
+			color:#000;}
+A:active {text-decoration:none;
+	color:#f7ece7;}
+A:hover {text-decoration:underline;
+	color: #daa628;}
+
+
+#menubar
+{
+	margin-top: -1em;
+	margin-left: -50px;
+	/* border-right: 0.1px solid black; */
+	height:60px;
+    font-size: 16px;
+	text-align: center;
+	padding:0px 0px 0px 70px;
+	width:72%;
+}
+
+.copyright {
+	font-size: 8px;
+	/* padding: 15px 0 3px;
+	padding: 1rem 0 .2rem; */
+	color: #000;
+	background-color: #F2EFEA;
+	text-align: center;
+	margin-left: -1050px;
+}
+
+/* ----------------------------------------
+
+Error Styles
+------------------------------------------- */
+.form-group input,
+.form-group:last-of-type {
+	width: 100%;
+
+}
+
+.error-message {
+	margin: 8px 0 12px;
+	text-align: left;
+	font-size: .9rem;
+	color: #ED5254;
+	display: none;
+}
+
+.error {
+	border: 2px solid #ED5254;
+}
+
+/* ----------------------------------------
+Media Queries
+------------------------------------------- */
+
+@media only screen and (max-width: 790px) {
+
+	/* p {
+	font-family: 'Lato', sans-serif;
+	text-transform: none;
+	line-height: 1.4;
+	} */
+
+	body h1 {
+		font-size: 20.5px;
+		/* font-size: 2.5rem; */
+		letter-spacing: 1px;
+		letter-spacing: .2rem;
+	}
+
+	/* .vertical-center h1 {
+	margin: -8em 0 0 20em;
+}
+
+.vertical-center h2 {
+margin: 1em 0 0 25em;
+} */
+
+a {
+	text-decoration: none;
+	color: #7B98AA;
+	font-weight: 600;
+	transition: all .3s ease-in-out;
+}
+
+a:hover {
+	color: #44545E;
+}
+
+
+header {
+	padding-top: 30px;
+	height: 100vh;
+	min-width:900px;
+}
+
+#welcome {
+	margin: 0 40em 0 2em;
+}
+
+h1 a:hover {
+	color: #EA7200;
+}
+
+.hamburger {
+	display: none;
+}
+
+h1 a,
+h1,
+header h2 {
+	color: #fff;
+}
+
+.col-third {
+	width: 100%;
+}
+
+.col-third img {
+	display: block;
+	margin: 3rem auto 1rem;
+}
+
+.col-third h3 {
+	margin-bottom: .5rem;
+}
+
+.col-third:first-of-type img {
+	margin-top: 0;
+}
+
+
+
+
+}
+
+@media only screen and (max-width: 560px) {
+	html {
+		font-size: 100px;
+	}
+
+	.hamburger {
+		display: block;
+		color: #fff;
+		font-size: 1.7rem;
+		position: absolute;
+		top: 10px;
+		left: 2px;
+	}
+
+}
